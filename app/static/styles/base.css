@@ -1,0 +1,57 @@
+/* Общие стили */
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    list-style-type: none;
+    left: 0px;
+    padding-inline-start: 0px;
+}
+
+* {
+    font-family: 'Manrope', sans-serif;
+}
+
+
+a {
+    text-decoration: none;
+}
+
+/* Декстопная версия стилей */
+@media (hover: hover) {
+    footer {
+        background-color: rgb(237, 237, 237);
+        height: 50px;
+        width: 300px;
+        position: absolute;
+        bottom: 0px;
+        left: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    #logo {
+        height: 170px;
+        width: 170px;
+    }
+
+    a:hover {
+        text-decoration: underline;
+    }
+}
+
+/* Мобильная версия */
+@media (hover: none) {
+    footer {
+        background-color: rgb(237, 237, 237);
+        position: absolute;
+        height: calc(max(100vh, 100vw) * 0.07);
+        width: calc(max(100vh, 100vw) * 0.3);
+        bottom: 0px;
+        left: 0px;
+        border-top-right-radius: 10px;
+    }
+
+    #logo {
+        height: max(calc(100vw * 0.1), calc(100vh * 0.1));
+        width: max(calc(100vw * 0.1), calc(100vh * 0.1));
+    }
+}

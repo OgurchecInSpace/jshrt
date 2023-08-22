@@ -1,0 +1,48 @@
+/* Общие стили */
+#text {
+    margin-top: 5%;
+    text-align: center;
+}
+
+#code_panel {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    width: 90%;
+    line-height: 2;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+}
+
+#code {
+    text-align: left;
+    margin-left: 2%;
+}
+
+/* Декстопная версия стилей */
+@media (hover: hover) {
+    #main {
+        background-color: rgb(237, 237, 237);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 700px;
+        height: 350px;
+        border-radius: 10px;
+    }
+}
+
+/* Мобильная версия */
+@media (hover: none) {
+    #main {
+        background-color: rgb(237, 237, 237);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        width: 70%;
+        height: 65%;
+        border-radius: 10px;
+    }
+}

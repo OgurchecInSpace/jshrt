@@ -1,0 +1,20 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='styles/index.css') }}">
+    <div id="main">
+        <div id="upper_part">
+            <input id="url_area" value="" placeholder="URL">
+            <input id="short_button" type="submit" value="SHORT">
+        </div>
+    
+        <div id="result_panel">
+            <p id="short_url">
+                <a href="" id="href" target="_blank"></a>
+            </p>
+            <input id="copy_button" type="submit" value="COPY">
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/index.js') }}"></script>
+{% endblock %}

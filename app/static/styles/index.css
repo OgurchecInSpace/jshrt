@@ -1,0 +1,102 @@
+/* Общие стили */
+#upper_part {
+    margin-top: 10%;
+    height: 40%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#url_area {
+    width: 40%;
+    height: 30%;
+    border-radius: 5px;
+    border: none;
+}
+
+#url_area:focus,
+#url_area:active {
+    outline-width: 2px;
+    outline-color: rgb(203, 203, 203);
+
+}
+
+#url_area::placeholder {
+    color: #c8c8c8;
+}
+
+#result_panel {
+    border-radius: 10px;
+    width: 70%;
+    height: 45%;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, 0%);
+    background-color: rgb(255, 255, 255);
+    display: flex;  
+    justify-content: center;
+}
+
+#short_button {
+    outline-width: 2px;
+    outline-color: rgb(203, 203, 203);
+    height: 30%;
+    width: 10%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    transition: all 100ms ease-out;
+}
+
+#short_url {
+    opacity: 0;
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 1500ms ease-out;
+}
+
+#copy_button {
+    outline-width: 2px;
+    outline-color: rgb(203, 203, 203);
+    height: 30%;
+    width: 13%;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    transition: all 100ms ease-out;
+    margin-top: 15%;
+}
+
+
+
+
+/* Декстопная версия стилей */
+@media (hover: hover) {
+    #main {
+        border-radius: 10px;
+        width: 600px;
+        height: 280px;
+        background-color: rgb(237, 237, 237);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}
+
+
+/* Мобильная версия */
+@media (hover: none) {
+    #main {
+        border-radius: 10px;
+        width: 60%;
+        height: 50%;
+        background-color: rgb(237, 237, 237);
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+}

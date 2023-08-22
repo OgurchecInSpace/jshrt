@@ -1,0 +1,9 @@
+{% extends "base.html" %}
+
+{% block content %}
+    <link rel="stylesheet" type="text/css" href="{{ url_for( 'static', filename='styles/error.css')}}">
+
+    <p>Error 500</p>
+    <p>Server was down</p>
+    {% include '_error.html' %}
+{% endblock %}
