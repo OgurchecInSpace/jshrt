@@ -78,4 +78,3 @@ def clear_db():
 
 
 from app import routes, models, errors
-from app.api import api

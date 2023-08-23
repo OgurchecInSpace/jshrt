@@ -19,5 +19,5 @@ ENV FLASK_APP jshrt.py
 RUN chown -R jshrt:jshrt ./
 USER jshrt
 
-EXPOSE 8080 9090
+EXPOSE 80
 ENTRYPOINT ["./boot.sh"]
