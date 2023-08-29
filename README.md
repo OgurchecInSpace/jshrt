@@ -3,4 +3,6 @@ This site doesn't work in docker container because it uses env IP for generate s
   
 Dockerfile and requirements in main directory. 
 
-Api in this version run on 9090 port, website on 8080 port
+Api and website run on :8080 (mapping this port to 80 on hosting)
+It uses nginx now, but you can don't use nginx if you will use it
+
