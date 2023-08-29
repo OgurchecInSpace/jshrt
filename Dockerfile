@@ -17,7 +17,9 @@ RUN chmod +x boot.sh
 ENV FLASK_APP jshrt.py
 
 RUN chown -R jshrt:jshrt ./
+
 USER jshrt
 
-EXPOSE 8080 9090
+EXPOSE 8080
+
 ENTRYPOINT ["./boot.sh"]

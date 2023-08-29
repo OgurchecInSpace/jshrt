@@ -1,4 +1,5 @@
 from flask import Flask
+from werkzeug.middleware.proxy_fix import ProxyFix
 from config import Config
 from flask_sqlalchemy import SQLAlchemy
 from flask_migrate import Migrate
@@ -6,6 +7,7 @@ from flask_migrate import Migrate
 # Все основные штуки для работы приложения
 app = Flask(__name__)
 app.config.from_object(Config)
+app.wsgi_app = ProxyFix(app.wsgi_app)
 db = SQLAlchemy(app)
 migrate = Migrate(app, db)
 
@@ -78,4 +80,3 @@ def clear_db():
 
 
 from app import routes, models, errors
-from app.api import api
